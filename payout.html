@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="./stylesPayout.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+AU+QLD:wght@100..400&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payout</title>
+    <link rel="icon" href="./multimedia/icono.png" type="image/png" />
+  </head>
+  <body>
+    <a onclick="location.href='./index.html'"><h5>X</h5></a>
+    <h1 class="bienvenida">BIENVENIDO A LA COMUNIDAD</h1>
+    <h3 class="bienvenida">Accede a la comunidad y conoce mi contenido</h3>
+    <div class="contenedor">
+      <img src="./multimedia/SalaComunidad.jpg" />
+      <section class="seccion">
+        <p class="euros">€100 EUR</p>
+        <div id="paypal-button-container"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AbN9Y1p2QsWogAcSEFx1wllUfaGgLlEVDDXyg0HQNev5XAF8jHj2QSc8s1RS0mm5I9PM4NhbokgiM96C&currency=USD&locale=es_ES"></script>
+        <script>
+          paypal
+            .Buttons({
+              createOrder: function (data, actions) {
+                return actions.order.create({
+                  purchase_units: [
+                    {
+                      amount: {
+                        value: "100.00", // Precio del producto
+                      },
+                    },
+                  ],
+                });
+              },
+              onApprove: function (data, actions) {
+                return actions.order.capture().then(function (details) {
+                  alert("Pago completado por " + details.payer.name.given_name);
+                  console.log(details);
+                });
+              },
+            })
+            .render("#paypal-button-container");
+        </script>
+        <!-- <input type="email" placeholder="Email" />
+        <p class="euros">Tarjeta de crédito</p>
+        <input type="number" placeholder="Número de la tarjeta" />
+        <input type="date" placeholder="MM/AA" />
+        <input type="number" placeholder="CVC" /> -->
+        <p class="terminos">
+          Acepto los siguientes términos: Soy el titular de la tarjeta de
+          debito/credito usada para el pago Soy consciente de que es una
+          suscripción recurrente y cada mes se cobra 100 eur, puedes cancelar tu
+          mismo en ajustes en la escuela. Soy mayor de edad (+18 años)
+        </p>
+        <!-- <button>COMPRAR AHORA</button> -->
+      </section>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const contenedor = document.querySelector(".contenedor");
+      const imagen = contenedor.querySelector("img");
+
+      const limiteAlto = 1000; // Límite de alto del div
+
+      const observer = new ResizeObserver((entries) => {
+        for (let entry of entries) {
+          const alto = entry.contentRect.height;
+
+          if (alto > limiteAlto) {
+            // Ocultar la imagen
+            imagen.style.display = "none";
+            // Agregar clase para centrar el contenido
+            contenedor.classList.add("centrado");
+          } else {
+            // Mostrar la imagen
+            imagen.style.display = "";
+            // Quitar clase
+            contenedor.classList.remove("centrado");
+          }
+        }
+      });
+
+      observer.observe(contenedor);
+    });
+  </script>
+</html>

@@ -1,0 +1,67 @@
+html {
+  background-image: url("multimedia/pisoRajado.png");
+  background-color: darkslategray;
+  font-family: "Barlow", sans-serif;
+  background-size: cover;
+}
+h5 {
+  color: aliceblue;
+  margin: auto auto 0px 195vh;
+  font-size: 2.5vh;
+  cursor: pointer;
+}
+h5:hover {
+  text-shadow: 1px 1px 5px black;
+}
+.bienvenida {
+  text-align: center;
+  color: aliceblue;
+  font-size: 2.5em;
+}
+h1 {
+  margin-top: 55px;
+}
+.contenedor {
+  background-image: url("multimedia/fondo-abstracto-para-descarga-gratuita.jpg");
+  margin: auto 35vh auto 35vh;
+  background-color: coral;
+  display: flex;
+}
+p,
+input {
+  text-align: center;
+  margin-left: 8vh;
+  font-size: 2.5vh;
+  padding: 5px;
+  width: 60vh;
+}
+.euros {
+  color: aliceblue;
+  font-size: 2em;
+  padding: none;
+}
+.terminos {
+  box-shadow: 0 0 10px 2px black;
+}
+button {
+  background-color: gold;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  margin-left: 18vh;
+  cursor: pointer;
+  font-size: 4vh;
+}
+#paypal-button-container {
+  margin-top: 60px;
+  margin-left: 70px;
+}
+.contenedor.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Asegurar que la sección no se deforme */
+.contenedor.centrado .seccion {
+  margin: 0;
+}

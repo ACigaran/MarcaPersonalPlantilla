@@ -1,0 +1,56 @@
+html {
+  background-image: url("./multimedia/pisoRajado.png");
+  background-color: aliceblue;
+  background-size: cover;
+}
+h5 {
+  margin: -30px auto 0px 196vh;
+  font-size: 2.5vh;
+  cursor: pointer;
+  color: beige;
+}
+h5:hover {
+  text-shadow: 1px 1px 5px black;
+}
+h1 {
+  background-color: cadetblue;
+  color: aliceblue;
+  padding: 10px;
+}
+.botonSalir {
+  display: flex;
+  margin: -65px auto auto 187vh;
+  background-color: gold;
+  color: aliceblue;
+  border-radius: 5px;
+  font-size: 2.5vh;
+  padding: 2.5px;
+  cursor: pointer;
+}
+.seccionVideos {
+  margin: 50px auto auto auto;
+  background-color: cadetblue;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  width: 90vh;
+  height: 65vh;
+}
+.seccionVideos:hover {
+  box-shadow: 0px 0px 15px 2.5px black;
+}
+.primeraMentoria {
+  font-size: 5vh;
+}
+.seccionVideos h2 {
+  color: antiquewhite;
+}
+.video {
+  width: 75vh;
+}
+footer {
+  background-color: cadetblue;
+  margin: 15px auto auto auto;
+  text-align: center;
+  padding: 8px;
+}
