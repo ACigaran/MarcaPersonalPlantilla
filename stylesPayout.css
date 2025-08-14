@@ -27,8 +27,7 @@ h1 {
   background-color: coral;
   display: flex;
 }
-p,
-input {
+p {
   text-align: center;
   margin-left: 8vh;
   font-size: 2.5vh;
@@ -43,14 +42,6 @@ input {
 .terminos {
   box-shadow: 0 0 10px 2px black;
 }
-button {
-  background-color: gold;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  margin-left: 18vh;
-  cursor: pointer;
-  font-size: 4vh;
-}
 #paypal-button-container {
   margin-top: 60px;
   margin-left: 70px;
@@ -61,7 +52,39 @@ button {
   align-items: center;
 }
 
-/* Asegurar que la sección no se deforme */
 .contenedor.centrado .seccion {
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  h5 {
+    margin: 0 95%;
+    font-size: 1.5em;
+  }
+  .bienvenida {
+    margin: 15px;
+    font-size: 2em;
+  }
+  .contenedor {
+    margin: 0 auto;
+    display: flex;
+  }
+  .contenedor img {
+    display: none;
+  }
+  p {
+    text-shadow: 0 0 3px black;
+    margin: 5px auto 10px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2em;
+    width: 90%;
+  }
+  .euros {
+    margin: 5px auto;
+    font-size: 2em;
+  }
+  #paypal-button-container {
+    margin: 0 auto;
+    padding: 10px;
+  }
 }

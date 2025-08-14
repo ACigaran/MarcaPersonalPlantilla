@@ -31,7 +31,7 @@
                   purchase_units: [
                     {
                       amount: {
-                        value: "1000.00", // Precio del producto
+                        value: "1000.00",
                       },
                     },
                   ],
@@ -46,18 +46,12 @@
             })
             .render("#paypal-button-container");
         </script>
-        <!-- <input type="email" placeholder="Email" />
-        <p class="euros">Tarjeta de crédito</p>
-        <input type="number" placeholder="Número de la tarjeta" />
-        <input type="date" placeholder="MM/AA" />
-        <input type="number" placeholder="CVC" /> -->
         <p class="terminos">
           Acepto los siguientes términos: Soy el titular de la tarjeta de
           debito/credito usada para el pago Soy consciente de que es una
           suscripción recurrente y cada mes se cobra 100 eur, puedes cancelar tu
           mismo en ajustes en la escuela. Soy mayor de edad (+18 años)
         </p>
-        <!-- <button>COMPRAR AHORA</button> -->
       </section>
     </div>
   </body>
@@ -66,21 +60,17 @@
       const contenedor = document.querySelector(".contenedor");
       const imagen = contenedor.querySelector("img");
 
-      const limiteAlto = 1000; // Límite de alto del div
+      const limiteAlto = 1000;
 
       const observer = new ResizeObserver((entries) => {
         for (let entry of entries) {
           const alto = entry.contentRect.height;
 
           if (alto > limiteAlto) {
-            // Ocultar la imagen
             imagen.style.display = "none";
-            // Agregar clase para centrar el contenido
             contenedor.classList.add("centrado");
           } else {
-            // Mostrar la imagen
             imagen.style.display = "";
-            // Quitar clase
             contenedor.classList.remove("centrado");
           }
         }

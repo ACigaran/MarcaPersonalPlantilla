@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="./stylesPayout.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+AU+QLD:wght@100..400&display=swap"
-    rel="stylesheet"
-  />
   <head>
+    <link rel="stylesheet" href="./stylesPayout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+AU+QLD:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payout</title>
@@ -31,7 +31,7 @@
                   purchase_units: [
                     {
                       amount: {
-                        value: "100.00", // Precio del producto
+                        value: "100.00",
                       },
                     },
                   ],
@@ -46,18 +46,12 @@
             })
             .render("#paypal-button-container");
         </script>
-        <!-- <input type="email" placeholder="Email" />
-        <p class="euros">Tarjeta de crédito</p>
-        <input type="number" placeholder="Número de la tarjeta" />
-        <input type="date" placeholder="MM/AA" />
-        <input type="number" placeholder="CVC" /> -->
         <p class="terminos">
           Acepto los siguientes términos: Soy el titular de la tarjeta de
           debito/credito usada para el pago Soy consciente de que es una
           suscripción recurrente y cada mes se cobra 100 eur, puedes cancelar tu
           mismo en ajustes en la escuela. Soy mayor de edad (+18 años)
         </p>
-        <!-- <button>COMPRAR AHORA</button> -->
       </section>
     </div>
   </body>
@@ -66,21 +60,17 @@
       const contenedor = document.querySelector(".contenedor");
       const imagen = contenedor.querySelector("img");
 
-      const limiteAlto = 1000; // Límite de alto del div
+      const limiteAlto = 1000;
 
       const observer = new ResizeObserver((entries) => {
         for (let entry of entries) {
           const alto = entry.contentRect.height;
 
           if (alto > limiteAlto) {
-            // Ocultar la imagen
             imagen.style.display = "none";
-            // Agregar clase para centrar el contenido
             contenedor.classList.add("centrado");
           } else {
-            // Mostrar la imagen
             imagen.style.display = "";
-            // Quitar clase
             contenedor.classList.remove("centrado");
           }
         }
