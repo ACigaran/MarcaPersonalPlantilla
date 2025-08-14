@@ -54,3 +54,36 @@ footer {
   text-align: center;
   padding: 8px;
 }
+@media screen and (max-width: 768px) {
+  h5 {
+    display: flex;
+    text-shadow: 0 0 4px black;
+    margin: 32px 152%;
+    font-size: 2em;
+  }
+  h1 {
+    width: 156%;
+    align-self: center;
+  }
+  .botonSalir {
+    display: block;
+    margin: -73px 125%;
+    font-size: 2em;
+    padding: 2.5px;
+  }
+  .seccionVideos {
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 153%;
+    height: 35em;
+  }
+  .video {
+    width: 100%;
+  }
+  footer {
+    font-size: 2em;
+    margin: 0 auto;
+    color: beige;
+    width: 156%;
+  }
+}
