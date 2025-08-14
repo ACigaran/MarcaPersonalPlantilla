@@ -158,7 +158,7 @@ h2 {
     margin: 0 auto;
   }
   .imagenytexto img {
-    margin: 35em 5px 5px 5px;
+    margin: 28em 5px 5px 5px;
     width: 97%;
     height: 20em;
   }
@@ -169,21 +169,17 @@ h2 {
     width: 65%;
     height: 2.5em;
   }
-  .historiaParrafo p {
-    display: none;
-  }
-  .historiaParrafo h3 {
+  .historiaParrafo {
     display: none;
   }
   .textoCelular {
-    margin-right: 250em;
     text-align: justify;
-    margin-left: -380px;
-    margin-bottom: 0px;
-    margin-top: 5px;
+    margin-left: -350px;
+    margin-bottom: 0;
     display: block;
-    height: 40%;
-    width: 50%;
+    height: 60%;
+    width: 85%;
+    font-size: 1.3em;
   }
   .body3 {
     width: 100%;
