@@ -72,3 +72,25 @@ a {
 .recuerdo {
   margin: -16px auto auto 30px;
 }
+@media screen and (max-width: 768px) {
+  h5 {
+    text-shadow: 1px 1px 5px black;
+    margin: 0 auto auto 95%;
+    font-size: 2.5vh;
+  }
+  h3 {
+    margin: 5px;
+  }
+  .login {
+    margin: 20px auto;
+    height: 63vh;
+    width: 90%;
+  }
+  h2 {
+    margin: 15px;
+    font-size: 4em;
+  }
+  a {
+    margin-top: 8px;
+  }
+}

@@ -42,6 +42,9 @@ h2 {
 .MIHISTORIA {
   margin-left: 55vh;
 }
+.textoCelular {
+  display: none;
+}
 .imagenytexto {
   margin: 5px auto auto 25vh;
   display: flex;
@@ -119,4 +122,94 @@ h2 {
   font-size: 10vh;
   cursor: pointer;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .body1 {
+    width: 135vh;
+    margin-bottom: 75px;
+  }
+  .login {
+    border-radius: 8px;
+    margin-left: 85%;
+    margin-top: 5px;
+    font-size: 5vh;
+    height: 6vh;
+  }
+  .video1 {
+    margin: 5vh 45vw;
+    margin-bottom: 15px;
+    width: 100vh;
+  }
+  .body2 {
+    width: 135vh;
+    margin-bottom: 75px;
+  }
+  .MIHISTORIA {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .imagenytexto {
+    margin: 0 auto;
+  }
+  .imagenytexto img {
+    margin: 70vh 0 2.5vh 10vh;
+    width: 150vh;
+    height: 85vh;
+  }
+  .cambiarVida {
+    margin: 5px 45vh;
+    border-radius: 5px;
+    font-size: 6vh;
+    width: 50vh;
+    height: 8vh;
+  }
+  .historiaParrafo p {
+    display: none;
+  }
+  .historiaParrafo h3 {
+    display: none;
+  }
+  .textoCelular {
+    display: block;
+    text-align: justify;
+    margin: 5vh 0 0 -120vh;
+    font-size: 5vh;
+    width: 120vh;
+  }
+  .body3 {
+    width: 135vh;
+  }
+  .cursos {
+    margin: 10px 40vh;
+    display: inline-table;
+    text-align: center;
+    font-size: 5vh;
+    height: 35vh;
+    width: 55vh;
+  }
+  .articulo {
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .unirse {
+    font-size: 4vh;
+  }
+  .tituloDeExito {
+    margin: 10px auto;
+  }
+  .textosDeExito {
+    text-align: center;
+    margin: 0 5vh;
+    font-size: 5vh;
+    padding: 5px;
+    width: 120vh;
+  }
+  .body4 {
+    width: 135vh;
+  }
+  .botonFinal {
+    margin: 10px 45vh;
+    font-size: 10vh;
+  }
 }
