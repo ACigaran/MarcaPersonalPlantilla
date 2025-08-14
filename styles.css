@@ -125,43 +125,50 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .body1 {
-    width: 135vh;
+    width: 100%;
     margin-bottom: 75px;
   }
   .login {
     border-radius: 8px;
-    margin-left: 85%;
+    margin-left: 75%;
     margin-top: 5px;
-    font-size: 5vh;
-    height: 6vh;
+    font-size: 1.5em;
+    height: 2em;
+  }
+  h2 {
+    margin: 0.5em auto;
+    text-align: center;
+    font-size: 3em;
   }
   .video1 {
-    margin: 5vh 45vw;
+    margin: 3em 0.5em;
     margin-bottom: 15px;
-    width: 100vh;
+    width: 95%;
+    height: 20em;
   }
   .body2 {
-    width: 135vh;
-    margin-bottom: 75px;
+    width: 100%;
+    /* margin-bottom: 75px; */
   }
   .MIHISTORIA {
     margin-top: 15px;
     margin-left: 0;
   }
-  .imagenytexto {
+  .imagenytexto,
+  h5 {
     margin: 0 auto;
   }
   .imagenytexto img {
-    margin: 70vh 0 2.5vh 10vh;
-    width: 150vh;
-    height: 85vh;
+    margin: 35em 5px 5px 5px;
+    width: 97%;
+    height: 20em;
   }
   .cambiarVida {
-    margin: 5px 45vh;
+    margin: 0 2em 5px;
     border-radius: 5px;
-    font-size: 6vh;
-    width: 50vh;
-    height: 8vh;
+    font-size: 2em;
+    width: 65%;
+    height: 2.5em;
   }
   .historiaParrafo p {
     display: none;
@@ -170,22 +177,24 @@ h2 {
     display: none;
   }
   .textoCelular {
-    display: block;
+    margin-right: 250em;
     text-align: justify;
-    margin: 5vh 0 0 -120vh;
-    font-size: 5vh;
-    width: 120vh;
+    margin-left: -380px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    display: block;
+    height: 40%;
+    width: 50%;
   }
   .body3 {
-    width: 135vh;
+    width: 100%;
   }
   .cursos {
-    margin: 10px 40vh;
-    display: inline-table;
+    margin: 10px auto;
     text-align: center;
-    font-size: 5vh;
-    height: 35vh;
-    width: 55vh;
+    font-size: 2em;
+    height: 20em;
+    width: 100%;
   }
   .articulo {
     border-radius: 10px;
@@ -193,23 +202,32 @@ h2 {
     padding: 5px;
   }
   .unirse {
-    font-size: 4vh;
+    font-size: 1em;
   }
   .tituloDeExito {
     margin: 10px auto;
+    font-size: 2.5em;
+    width: 75%;
   }
   .textosDeExito {
     text-align: center;
-    margin: 0 5vh;
-    font-size: 5vh;
+    margin: 0 auto;
+    font-size: 1.2em;
     padding: 5px;
-    width: 120vh;
+    width: 90%;
   }
   .body4 {
-    width: 135vh;
+    width: 100%;
+    font-size: 1em;
+  }
+  .body4 h2 {
+    font-size: 2em;
+  }
+  .body4 img {
+    width: 100%;
   }
   .botonFinal {
-    margin: 10px 45vh;
-    font-size: 10vh;
+    margin: 0 auto;
+    font-size: 2em;
   }
 }
